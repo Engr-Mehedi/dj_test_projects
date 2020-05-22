@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Project</title>
+</head>
+<body>
+	<h3>
+		Hello I am test Project
+	</h3>
+
+	<h1>
+		Below form for adding data to the database
+	</h1>
+	<form action="/save">
+		{% csrf_token %}
+		<input type="text" placeholder="Enter your name">
+		<input type="text" placeholder="Enter your profession name">
+		<button type="submit">Submit Data</button>
+	</form>
+</body>
+</html>
